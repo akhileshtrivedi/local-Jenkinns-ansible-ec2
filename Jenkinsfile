@@ -4,7 +4,7 @@
         stage('SCM Checkout'){
             steps{
                 git branch: 'main', credentialsId: 'github',
-                url: 'https://github.com/akhileshtrivedi/jenkins-ansible'
+                url: 'https://github.com/akhileshtrivedi/local-Jenkinns-ansible-ec2'
             }
             
         }
