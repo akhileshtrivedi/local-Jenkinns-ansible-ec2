@@ -7,19 +7,19 @@
       yum:
         name: "httpd"
         state: "present"
-    - tags:
+      tags:
         - install
     - name: Start Apache server
       service:
         name: httpd
         state: started
         enabled: True
-    - tags:
+      tags:
         - start
     - name: Deploy static website
       copy:
         src: index.html
         dest: /var/www/html/
-    - tags:
+      tags:
         - deploy
 ...
